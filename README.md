@@ -1,35 +1,23 @@
-# WIRED 2024 - MNE Python Tutorial
+# MNE Python Tutorial
 
-### Authors:
-* [Maansi Desai, PhD](https://maansidesai.github.io/)
-Postdoctoral Researcher in the [Hamilton Lab](https://slhs.utexas.edu/research/hamilton-lab)
-Department of Speech, Language, and Hearing Sciences
-The University of Texas at Austin
-* [Alex Gramfort](https://alexandre.gramfort.net/), Research Scientist, Meta Reality Labs, Paris, France
-* [Apolline Mellot](https://github.com/apmellot), PhD Student at Inria, Université Paris-Saclay, France
+This is derived from the 2024 WIRED MNE python tutorial given by Maansi Desai in Paris in 2024 and developed by [Maansi Desai](https://maansidesai.github.io/), [Alex Gramfort](https://alexandre.gramfort.net/), and [Apolline Mellot](https://github.com/apmellot).
 
 ## Getting Started
-Welcome to the WIRED 2024 [MNE Python](https://mne.tools/stable/index.html) Tutorial! If you're reading this, hopefully you are getting started learning how to use python and jupyter notebooks to do some analysis of neuroscience data! In this tutorial, we will be using several [BIDS](https://bids-specification.readthedocs.io/en/stable/)-formatted [intracranial datasets](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html). The tutorials here are organized into Jupyter notebooks that will go through a series of concepts that will give you the foundation for what you need to preprocess and plot epochs using [MNE-Python](https://mne.tools/stable/index.html). 
+Welcome to the [MNE Python](https://mne.tools/stable/index.html) Tutorial! If you're reading this, hopefully you are getting started learning how to use python and jupyter notebooks to do some analysis of neuroscience data! In this tutorial, we will be using several [BIDS](https://bids-specification.readthedocs.io/en/stable/)-formatted [intracranial datasets](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html). The tutorials here are organized into Jupyter notebooks that will go through a series of concepts that will give you the foundation for what you need to preprocess and plot epochs using [MNE-Python](https://mne.tools/stable/index.html). 
 
 ## Installation Instructions
-* First you should install [MNE-python](https://mne.tools/stable/install/index.html). We recommend using the standalone installer. Note that for Mac M2 chips this may not work, but you can try running the installer from your command line instead, e.g.
-
-```bash
-# Only try this if the standalone installer doesn't work on mac:
-sudo installer -verbose -pkg MNE-Python-1.6.1_0-macOS_M1.pkg -target /
-```
-
+* First you should install [MNE-python](https://mne.tools/stable/install/index.html). We recommend using the standalone installer.
 * Open up the MNE-prompt, and in the MNE environment, install `nb_conda_kernels` for better experience with Jupyter notebooks. See MNE's [Advanced Installation Instructions](https://mne.tools/stable/install/advanced.html) for more information.
 
 ```bash
 conda install --name=base nb_conda_kernels
 
 ```
-* Clone using git(or [download](https://github.com/maansidesai/WIRED-2024-Paris/archive/refs/heads/main.zip)) this repository in your directory of choice on your local machine.
+* Clone using git or download this repository in your directory of choice on your local machine.
 
 ```bash
-git clone https://github.com/maansidesai/WIRED-2024-Paris/
-cd path/to/WIRED-2024-Paris
+git clone https://github.com/HamiltonLabUT/MNE-tutorial-sEEG/
+cd path/to/MNE-tutorial-sEEG
 ```
 
 * Start up MNE-prompt (or your MNE environment), and install the required python libraries in `requirements.txt`:
